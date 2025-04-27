@@ -34,7 +34,7 @@ object SparkRecap {
   val europeanCars = cars.where(col("Origin") =!= "USA")
 
   // aggregations
-  val averageHP = cars.select(avg(col("Horsepower")).as("average_hp")) // sum, meam, stddev, min, max
+  val averageHP = cars.select(avg(col("Horsepower")).as("average_hp")) // sum, mean, stddev, min, max
 
   // grouping
   val countByOrigin = cars
