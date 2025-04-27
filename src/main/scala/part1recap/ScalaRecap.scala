@@ -3,7 +3,7 @@ package part1recap
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
 
-object ScalaRecap extends App {
+object ScalaRecap {
 
   // values and variables
   val aBoolean: Boolean = false
@@ -109,5 +109,9 @@ object ScalaRecap extends App {
     - imported scope
     - companion objects of the types involved in the method call
    */
+
+  def main(args: Array[String]): Unit = {
+    
+  }
 
 }
