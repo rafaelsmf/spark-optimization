@@ -43,16 +43,16 @@ object VideoGamesReviews {
    */
 
   val reviewsSchema = StructType(Seq(
-    StructField("rating", FloatType, true),
-    StructField("title", StringType, true),
-    StructField("text", StringType, true),
-    StructField("images", ArrayType(MapType(StringType, StringType)), true),
-    StructField("asin", StringType, true),
-    StructField("parent_asin", StringType, true),
-    StructField("user_id", StringType, true),
-    StructField("timestamp", LongType, true),
-    StructField("verified_purchase", BooleanType, true),
-    StructField("helpful_vote", IntegerType, true)
+    StructField("rating", FloatType, nullable = true),
+    StructField("title", StringType, nullable = true),
+    StructField("text", StringType, nullable = true),
+    StructField("images", ArrayType(MapType(StringType, StringType)), nullable = true),
+    StructField("asin", StringType, nullable = true),
+    StructField("parent_asin", StringType, nullable = true),
+    StructField("user_id", StringType, nullable = true),
+    StructField("timestamp", LongType, nullable = true),
+    StructField("verified_purchase", BooleanType, nullable = true),
+    StructField("helpful_vote", IntegerType, nullable = true)
   ))
 
   val reviewsDF = spark.read
