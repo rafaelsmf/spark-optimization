@@ -5,7 +5,7 @@ version := "0.3"
 
 scalaVersion := "2.13.16"
 
-val sparkVersion = "4.0.0-preview2"
+val sparkVersion = "4.0.0"
 val log4jVersion = "2.24.3"
 val zstdJniVersion = "1.5.6-5"
 
